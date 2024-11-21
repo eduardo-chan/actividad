@@ -15,7 +15,7 @@ services:
       
   backend:
     build:
-      context: ./actividad
+      context: ./gpds-autos
       dockerfile: Dockerfile
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/autos-10a

@@ -8,7 +8,7 @@ services:
       MYSQL_DATABASE: autos-10a
       MYSQL_USER: autos
       MYSQL_PASSWORD: passwordautos
-    volumes:  
+    volumes:
       - ./mysql-data:/var/lib/mysql
     networks:
       - app-network
@@ -31,12 +31,10 @@ services:
 
   frontend:
     build:
-      context: .
+      context: ./back-ui-gpds # Cambiar al directorio correcto
       dockerfile: Dockerfile
     ports:
       - "3000:80" 
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf 
     networks:
       - app-network
 

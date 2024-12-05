@@ -15,7 +15,7 @@ services:
       
   backend:
     build:
-      context: ./front-gpds-autos
+      context: ./back-ui-gpds
       dockerfile: Dockerfile
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql-db:3306/autos-10a
@@ -31,7 +31,7 @@ services:
 
   frontend:
     build:
-      context: ./back-ui-gpds # Cambiar al directorio correcto
+      context: ./front-gpds-autos
       dockerfile: Dockerfile
     ports:
       - "3000:80" 

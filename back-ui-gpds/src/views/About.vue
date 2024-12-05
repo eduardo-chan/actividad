@@ -2,7 +2,7 @@
 <template>
     <div>
       <h1>About</h1>
-      <p>Esta es la página de información actualización 4de dic 22.</p>
+      <p>Esta es la página de información actualización 4de dic 22ssss.</p>
     </div>
   </template>
   
